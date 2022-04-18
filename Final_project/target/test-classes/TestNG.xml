@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional Suite" parallel="tests">
+    <test name="Navigation functionality">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Tests.ElementNavigationTests"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="Cart Functionality">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Tests.CartInteractionTests"/>
+        </classes>
+
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
